@@ -71,13 +71,15 @@ $(document).ready(function() {
       if (isElementInViewport(element)) {
 
         if (!element.classList.contains("visible")) {
-          element.classList.add("visible")
-
+      
           if (scrollDirection === "up") {
             element.classList.add("slideup")
           } else {
             element.classList.add("slidedown")
           }
+
+          setTimeout(function(){element.classList.add("visible")});
+          
         } 
       } else {
         element.classList.remove("visible")
