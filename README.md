@@ -1,1 +1,1 @@
-Practice using parallax effect and Jquery
+Practice using parallax effect, Javascript and jQuery
